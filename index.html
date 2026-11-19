@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080c14">
+<title>OPTIPARTLIK | Mi contenido</title>
+<style>
+:root{--bg:#080c14;--panel:#101827;--panel2:#141f31;--blue:#28b8ff;--cyan:#69d5ff;--muted:#9aa9bd;--line:#26364c;--white:#f5f8ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#15314b 0,transparent 42%),var(--bg);color:var(--white);font-family:Inter,Segoe UI,Arial,sans-serif;min-height:100vh}
+header{height:76px;display:flex;align-items:center;justify-content:space-between;max-width:1120px;padding:0 24px;margin:auto}
+.logo{font-size:22px;font-weight:900;letter-spacing:1.5px}.logo span{color:var(--blue)}nav a{color:#c5d1e1;text-decoration:none;margin-left:25px;font-size:14px}nav a:hover{color:var(--cyan)}
+.hero{max-width:1120px;margin:18px auto 34px;padding:0 24px}.hero-card{min-height:330px;border:1px solid #24415c;border-radius:24px;overflow:hidden;position:relative;background:linear-gradient(105deg,rgba(5,11,20,.98),rgba(7,22,38,.83) 55%,rgba(10,35,55,.58)),radial-gradient(circle at 80% 50%,#12618c,transparent 38%);display:flex;align-items:center;padding:clamp(28px,6vw,70px)}
+.hero-card:after{content:"";position:absolute;width:340px;height:340px;border:1px solid #39bdff55;border-radius:50%;right:8%;top:50%;transform:translateY(-50%);box-shadow:0 0 0 35px #39bdff0c,0 0 0 75px #39bdff09,0 0 80px #168bc855}
+.hero-content{position:relative;z-index:1;max-width:610px}.eyebrow{color:var(--cyan);font-weight:800;font-size:12px;letter-spacing:3px}.hero h1{font-size:clamp(42px,8vw,76px);line-height:.98;margin:15px 0 12px;letter-spacing:-2px}.hero h1 span{color:var(--blue)}.hero p{color:#b4c3d6;font-size:16px;line-height:1.6;max-width:480px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{border:0;border-radius:11px;padding:12px 18px;font-weight:800;text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;font-size:14px}.primary{background:linear-gradient(135deg,#28b8ff,#1678d1);color:#04111d;box-shadow:0 8px 28px #168bd833}.secondary{background:#172438;color:#eaf5ff;border:1px solid #314760}
+main{max-width:1120px;margin:auto;padding:0 24px 60px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:35px 0 17px}.section-head h2{font-size:23px;margin:0}.section-head p{margin:6px 0 0;color:var(--muted);font-size:13px}.upload-panel{background:linear-gradient(145deg,#111d2d,#0e1725);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.upload-copy{display:flex;gap:14px;align-items:center}.upload-icon{width:48px;height:48px;border-radius:14px;background:#123957;color:var(--cyan);display:grid;place-items:center;font-size:23px}.upload-copy strong{display:block;margin-bottom:5px}.upload-copy small{color:var(--muted)}input[type=file]{display:none}.file-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:15px}.empty{grid-column:1/-1;border:1px dashed #344860;border-radius:16px;padding:35px;text-align:center;color:var(--muted);background:#0d1521}.empty b{display:block;color:#dce9f8;margin-bottom:7px}.file-card{background:var(--panel);border:1px solid var(--line);border-radius:15px;overflow:hidden}.preview{height:145px;background:#0b1421;display:grid;place-items:center;color:var(--cyan);font-size:42px;overflow:hidden}.preview img,.preview video{width:100%;height:100%;object-fit:cover}.file-info{padding:13px}.file-info strong{display:block;overflow-wrap:anywhere;font-size:14px}.file-info small{display:block;color:var(--muted);margin:6px 0 12px}.file-actions{display:flex;gap:8px}.file-actions button{background:#1a2a40;color:#d9eaff;border:1px solid #304761;border-radius:8px;padding:7px 10px;cursor:pointer;font-size:12px}.socials{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.social{display:flex;align-items:center;gap:15px;padding:19px;background:var(--panel);border:1px solid var(--line);border-radius:16px;text-decoration:none;color:var(--white);transition:.2s}.social:hover{border-color:var(--blue);transform:translateY(-2px)}.social-icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:23px;font-weight:900}.yt{background:#35191e;color:#ff555f}.tt{background:#172b34;color:#6deaff}.social small{display:block;color:var(--muted);margin-top:5px}.arrow{margin-left:auto;color:var(--cyan);font-size:20px}footer{text-align:center;color:#718198;border-top:1px solid #1c2a3d;padding:25px;font-size:12px}
+.note{color:#8092a9;font-size:12px;line-height:1.5;margin-top:12px}
+@media(max-width:650px){header{height:66px;padding:0 18px}nav a{margin-left:12px;font-size:12px}.hero,main{padding-left:17px;padding-right:17px}.hero-card{min-height:300px}.hero-card:after{right:-190px}.socials{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.upload-panel{align-items:flex-start}.upload-panel .btn{width:100%;justify-content:center}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">OPTI<span>PARTLIK</span></div>
+  <nav><a href="#publicaciones">Publicaciones</a><a href="#redes">Mis redes</a></nav>
+</header>
+<section class="hero">
+  <div class="hero-card"><div class="hero-content">
+    <div class="eyebrow">MI ESPACIO DIGITAL</div>
+    <h1>OPT<span>IPARTLIK</span></h1>
+    <p>Todo mi contenido en un solo lugar. Explora mis publicaciones y encuentra mis canales oficiales.</p>
+    <div class="actions"><a class="btn primary" href="#publicaciones">Ver publicaciones ↓</a><a class="btn secondary" href="#redes">Mis redes ↗</a></div>
+  </div></div>
+</section>
+<main>
+  <section id="publicaciones">
+    <div class="section-head"><div><h2>Mis publicaciones</h2><p>Imágenes, videos y archivos compartidos.</p></div></div>
+    <div class="upload-panel">
+      <div class="upload-copy"><div class="upload-icon">＋</div><div><strong>Sube contenido nuevo</strong><small>Selecciona imágenes, videos o documentos desde tu dispositivo.</small></div></div>
+      <label class="btn primary" for="fileInput">＋ Subir archivos</label>
+      <input id="fileInput" type="file" multiple accept="image/*,video/*,.pdf,.doc,.docx,.txt,.zip">
+    </div>
+    <p class="note">Nota: en esta primera versión, los archivos se guardan en este navegador y dispositivo. Para que todos los visitantes puedan ver tus publicaciones y tú puedas administrarlas desde cualquier lugar, hace falta conectar un servicio de almacenamiento y publicar la web.</p>
+    <div class="section-head"><div><h2>Contenido reciente</h2><p id="count">Todavía no hay publicaciones.</p></div></div>
+    <div class="file-list" id="fileList"><div class="empty"><b>Tu contenido aparecerá aquí</b>Usa “Subir archivos” para añadir tu primera publicación.</div></div>
+  </section>
+  <section id="redes">
+    <div class="section-head"><div><h2>Mis redes sociales</h2><p>Sígueme en mis canales oficiales.</p></div></div>
+    <div class="socials">
+      <a class="social" href="https://www.youtube.com/@PARTLIK_66" target="_blank" rel="noopener noreferrer"><div class="social-icon yt">▶</div><div><strong>YouTube</strong><small>PARTLIK_66</small></div><span class="arrow">↗</span></a>
+      <a class="social" href="https://www.tiktok.com/@partlik_66" target="_blank" rel="noopener noreferrer"><div class="social-icon tt">♪</div><div><strong>TikTok</strong><small>@partlik_66</small></div><span class="arrow">↗</span></a>
+    </div>
+  </section>
+</main>
+<footer>OPTIPARTLIK © <span id="year"></span> · Mi contenido, mi espacio.</footer>
+<script>
+const input=document.getElementById('fileInput'), list=document.getElementById('fileList'), count=document.getElementById('count');
+const DB='optipartlik_db', STORE='uploads'; let db;
+document.getElementById('year').textContent=new Date().getFullYear();
+function openDB(){return new Promise((resolve,reject)=>{const r=indexedDB.open(DB,1);r.onupgradeneeded=()=>r.result.createObjectStore(STORE,{keyPath:'id',autoIncrement:true});r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)})}
+function transact(mode,fn){return new Promise((resolve,reject)=>{const tx=db.transaction(STORE,mode),store=tx.objectStore(STORE);let result=fn(store);tx.oncomplete=()=>resolve(result);tx.onerror=()=>reject(tx.error)})}
+function iconFor(file){if(file.type.startsWith('image/'))return '▧';if(file.type.startsWith('video/'))return '▶';if(file.type==='application/pdf')return 'PDF';return '▤'}
+function formatSize(n){return n<1024? n+' B':n<1048576?(n/1024).toFixed(1)+' KB':(n/1048576).toFixed(1)+' MB'}
+async function render(){const items=await transact('readonly',s=>new Promise((res,rej)=>{const r=s.getAll();r.onsuccess=()=>res(r.result.reverse());r.onerror=()=>rej(r.error)}));list.innerHTML='';count.textContent=items.length?items.length+' publicación(es)':'Todavía no hay publicaciones.';
+if(!items.length){list.innerHTML='<div class="empty"><b>Tu contenido aparecerá aquí</b>Usa “Subir archivos” para añadir tu primera publicación.</div>';return}
+for(const item of items){const card=document.createElement('article');card.className='file-card';const preview=document.createElement('div');preview.className='preview';
+if(item.type.startsWith('image/')){const img=document.createElement('img');img.src=URL.createObjectURL(item.blob);img.alt=item.name;preview.append(img)}
+else if(item.type.startsWith('video/')){const v=document.createElement('video');v.src=URL.createObjectURL(item.blob);v.controls=true;preview.append(v)}
+else preview.textContent=iconFor(item);
+const info=document.createElement('div');info.className='file-info';const name=document.createElement('strong');name.textContent=item.name;const meta=document.createElement('small');meta.textContent=formatSize(item.size)+' · '+new Date(item.created).toLocaleDateString('es');const actions=document.createElement('div');actions.className='file-actions';
+const download=document.createElement('button');download.textContent='Descargar';download.onclick=()=>{const url=URL.createObjectURL(item.blob),a=document.createElement('a');a.href=url;a.download=item.name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+const del=document.createElement('button');del.textContent='Eliminar';del.onclick=async()=>{if(confirm('¿Eliminar '+item.name+'?')){await transact('readwrite',s=>s.delete(item.id));render()}};
+actions.append(download,del);info.append(name,meta,actions);card.append(preview,info);list.append(card)}
+}
+input.addEventListener('change',async()=>{for(const file of input.files){await transact('readwrite',s=>s.add({name:file.name,type:file.type||'',size:file.size,created:Date.now(),blob:file}))}input.value='';render()});
+openDB().then(value=>{db=value;render()}).catch(()=>{list.innerHTML='<div class="empty">Este navegador no permite guardar archivos. Prueba con una versión actualizada.</div>'});
+</script>
+</body>
+</html>
